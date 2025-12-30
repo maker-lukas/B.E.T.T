@@ -1,0 +1,98 @@
+{
+  "model": {
+    "type": "minecraft:composite",
+    "models": [
+      {
+        "type": "minecraft:model",
+        "model": "minecraft:item/diamond_sword"
+      },
+
+      {
+        "type": "minecraft:condition",
+        "property": "minecraft:component",
+        "predicate": "minecraft:enchantments",
+        "value": [
+          {
+            "enchantments": "minecraft:sharpness",
+            "levels": {
+              "min": 1
+            }
+          },
+          {
+            "enchantments": "minecraft:fire_aspect",
+            "levels": {
+              "min": 1
+            }
+          }
+        ],
+        "on_true": {
+          "type": "minecraft:model",
+          "model": "minecraft:item/sharpness_fire_aspect"
+        },
+        "on_false": {
+          "type": "minecraft:empty"
+        }
+      },
+
+      {
+        "type": "minecraft:condition",
+        "property": "minecraft:component",
+        "predicate": "minecraft:enchantments",
+        "value": [
+          {
+            "enchantments": "minecraft:sharpness",
+            "levels": {
+              "min": 1
+            }
+          }
+        ],
+        "on_true": {
+          "type": "minecraft:model",
+          "model": "minecraft:item/sharpness"
+        },
+        "on_false": {
+          "type": "minecraft:empty"
+        }
+      },
+
+      {
+        "type": "minecraft:condition",
+        "property": "minecraft:component",
+        "predicate": "minecraft:enchantments",
+        "value": [
+          {
+            "enchantments": "minecraft:fire_aspect",
+            "levels": {
+              "min": 1
+            }
+          }
+        ],
+        "on_true": {
+          "type": "minecraft:condition",
+          "property": "minecraft:component",
+          "predicate": "minecraft:enchantments",
+          "value": [
+            {
+              "enchantments": "minecraft:sharpness",
+              "levels": {
+                "min": 1
+              }
+            }
+          ],
+          "on_true": {
+            "type": "minecraft:empty"
+          },
+          "on_false": {
+            "type": "minecraft:model",
+            "model": "minecraft:item/fire_aspect"
+          }
+        },
+        "on_false": {
+          "type": "minecraft:empty"
+        }
+      }
+
+    ]
+
+  }
+}

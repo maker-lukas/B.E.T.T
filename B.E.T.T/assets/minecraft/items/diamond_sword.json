@@ -14,41 +14,26 @@
                 "value": [
                     {
                         "enchantments": "minecraft:fire_aspect",
-                        "levels": {
-                            "min": 1
-                        }
+                        "levels": {"min": 1}
                     }
                 ],
-                "on_true": {
-                    "type": "minecraft:model",
-                    "model": "minecraft:item/fire_aspect"
-                },
-                "on_false": {
-                    "type": "minecraft:empty"
-                }
+                "on_true": {"type": "minecraft:model", "model": "minecraft:item/fire_aspect"},
+                "on_false": {"type": "minecraft:empty"}
             },
-
+            
             {
-                "type":"minecraft:condition",
-                "property":"minecraft:component",
-                "predicate":"minecraft:enchantments",
-                "value":[
+                "type": "minecraft:condition",
+                "property": "minecraft:component",
+                "predicate": "minecraft:enchantments",
+                "value": [
                     {
                         "enchantments": "minecraft:sharpness",
-                        "levels": {
-                            "min": 1
-                        }
+                        "levels": {"min": 1}
                     }
                 ],
-                "on_true": {
-                    "type": "minecraft:model",
-                    "model": "minecraft:item/sharpness"
-                },
-                "on_false": {
-                    "type": "minecraft:empty"
-                }
+                "on_true": {"type": "minecraft:model", "model": "minecraft:item/sharpness"},
+                "on_false": {"type": "minecraft:empty"}
             }
-            
         ]
     }
 }

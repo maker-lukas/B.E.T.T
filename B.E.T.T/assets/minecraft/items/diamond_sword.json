@@ -17,7 +17,7 @@
                         "levels": {"min": 1}
                     }
                 ],
-                "on_true": {"type": "minecraft:model", "model": "minecraft:item/fire_aspect"},
+                "on_true": {"type": "minecraft:model", "model": "minecraft:item/sword/diamond/fire_aspect"},
                 "on_false": {"type": "minecraft:empty"}
             },
             
@@ -31,7 +31,7 @@
                         "levels": {"min": 1}
                     }
                 ],
-                "on_true": {"type": "minecraft:model", "model": "minecraft:item/sharpness"},
+                "on_true": {"type": "minecraft:model", "model": "minecraft:item/sword/diamond/sharpness"},
                 "on_false": {"type": "minecraft:empty"}
             }
         ]

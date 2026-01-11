@@ -1,7 +1,6 @@
 {
   "pack": {
     "description": "Better Enchanted Tool Textures!",
-    "min_format": [75, 0],
-    "max_format": [2147483647, 0]
+    "min_format": 55
   }
 }

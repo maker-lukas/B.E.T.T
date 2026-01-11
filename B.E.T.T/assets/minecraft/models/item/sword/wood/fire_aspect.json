@@ -2,6 +2,6 @@
   "parent": "minecraft:item/handheld",
   "textures": {
     "layer0": "minecraft:item/sword/shared/fire_aspect",
-    "layer1": "minecraft:item/sword/diamond/diamond_sword"
+    "layer1": "minecraft:item/sword/wood/wooden_sword"
   }
 }

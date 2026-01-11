@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:item/diamond_spear",
+  "textures": {
+    "layer0": "minecraft:item/spear/diamond/fire_aspect",
+    "layer1": "minecraft:item/spear/diamond/diamond_spear"
+  }
+}

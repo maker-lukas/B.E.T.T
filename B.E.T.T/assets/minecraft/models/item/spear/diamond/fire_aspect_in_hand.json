@@ -1,7 +1,7 @@
 {
   "parent": "minecraft:item/diamond_spear_in_hand",
   "textures": {
-    "layer0": "minecraft:item/spear/diamond/fire_aspect_in_hand",
+    "layer0": "minecraft:item/spear/shared/fire_aspect_in_hand",
     "layer1": "minecraft:item/spear/diamond/diamond_spear_in_hand"
   }
 }

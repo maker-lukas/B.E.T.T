@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:item/wooden_spear",
+  "textures": {
+    "layer0": "minecraft:item/spear/shared/fire_aspect",
+    "layer1": "minecraft:item/spear/wood/wooden_spear"
+  }
+}

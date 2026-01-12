@@ -18,12 +18,7 @@
                     "property": "minecraft:display_context",
                     "cases": [
                         {
-                            "when": [
-                                "gui",
-                                "ground",
-                                "fixed",
-                                "on_shelf"
-                            ],
+                            "when": ["gui", "ground", "fixed", "on_shelf"],
                             "model": {"type": "minecraft:model", "model": "minecraft:item/spear/copper/fire_aspect"}
                         }
                     ],
@@ -35,22 +30,55 @@
             },
 
             {
-                "type": "minecraft:select",
-                "property": "minecraft:display_context",
-                "cases": [
+                "type": "minecraft:condition",
+                "property": "minecraft:component",
+                "predicate": "minecraft:enchantments",
+                "value": [
                     {
-                        "when": [
-                            "gui",
-                            "ground",
-                            "fixed",
-                            "on_shelf"
-                        ],
-                            "model": {"type": "minecraft:model", "model": "minecraft:item/copper_spear"}
+                        "enchantments": "minecraft:sharpness",
+                        "levels": {"min": 1}
                     }
+                ],
+                "on_true": {
+                    "type": "minecraft:select",
+                    "property": "minecraft:display_context",
+                    "cases": [
+                        {
+                            "when": ["gui", "ground", "fixed", "on_shelf"],
+                            "model": {"type": "minecraft:model", "model": "minecraft:item/spear/copper/sharpness"}
+                        }
                     ],
-                        "fallback": {
-                            "type": "minecraft:model", "model": "minecraft:item/copper_spear_in_hand"
+                    "fallback": {
+                        "type": "minecraft:model", "model": "minecraft:item/spear/copper/sharpness_in_hand"
                     }
+                },
+                "on_false": {"type": "minecraft:empty"}
+            },
+
+            {
+                "type": "minecraft:condition",
+                "property": "minecraft:component",
+                "predicate": "minecraft:enchantments",
+                "value": [
+                    {
+                        "enchantments": ["minecraft:sharpness", "minecraft:fire_aspect"],
+                        "levels": {"min": 1}
+                    }
+                ],
+                "on_true": {"type": "minecraft:empty"},
+                "on_false": {
+                    "type": "minecraft:select",
+                    "property": "minecraft:display_context",
+                    "cases": [
+                        {
+                            "when": ["gui", "ground", "fixed", "on_shelf"],
+                            "model": {"type": "minecraft:model", "model": "minecraft:item/copper_spear"}
+                        }
+                    ],
+                    "fallback": {
+                        "type": "minecraft:model", "model": "minecraft:item/copper_spear_in_hand"
+                    }
+                }
             }
         ]
     }

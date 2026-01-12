@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:item/copper_spear_in_hand",
+  "textures": {
+    "layer0": "minecraft:item/spear/copper/copper_spear_in_hand",
+    "layer1": "minecraft:item/spear/shared/sharpness_in_hand"
+  }
+}

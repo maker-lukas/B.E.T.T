@@ -55,6 +55,16 @@
 - Mending
 - Curse of Vanishing
 
+### Spear
+- Smite
+- Bane of Arthropods
+- Looting
+- Knockback
+- Lunge
+- Unbreaking
+- Mending
+- Curse of Vanishing
+
 ### Bow
 - Power
 - Punch

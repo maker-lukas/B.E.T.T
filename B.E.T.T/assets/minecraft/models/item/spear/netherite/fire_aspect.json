@@ -1,7 +1,0 @@
-{
-  "parent": "minecraft:item/netherite_spear",
-  "textures": {
-    "layer0": "minecraft:item/spear/netherite/fire_aspect",
-    "layer1": "minecraft:item/spear/netherite/netherite_spear"
-  }
-}

@@ -1,7 +1,0 @@
-{
-  "parent": "minecraft:item/diamond_spear",
-  "textures": {
-    "layer0": "minecraft:item/spear/diamond/diamond_spear",
-    "layer1": "minecraft:item/spear/shared/sharpness"
-  }
-}

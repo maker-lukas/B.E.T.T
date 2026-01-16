@@ -1,7 +1,0 @@
-{
-  "parent": "minecraft:item/netherite_spear_in_hand",
-  "textures": {
-    "layer0": "minecraft:item/spear/netherite/netherite_spear_in_hand",
-    "layer1": "minecraft:item/spear/shared/sharpness_in_hand"
-  }
-}

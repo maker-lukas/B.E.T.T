@@ -1,7 +1,0 @@
-{
-  "parent": "minecraft:item/copper_spear",
-  "textures": {
-    "layer0": "minecraft:item/spear/copper/copper_spear",
-    "layer1": "minecraft:item/spear/shared/sharpness"
-  }
-}

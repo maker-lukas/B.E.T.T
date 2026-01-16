@@ -1,5 +1,5 @@
 {
-  "parent": "minecraft:item/handheld",
+  "parent": "minecraft:item/bow_pulling_0",
   "textures": {
     "layer0": "minecraft:item/bow_pulling_0",
     "layer1": "minecraft:item/bow/flame_pulling_0"

@@ -1,0 +1,29 @@
+{
+    "match": {
+      "items": [
+			"minecraft:copper_sword",
+			"minecraft:diamond_sword",
+			"minecraft:golden_sword",
+      "minecraft:iron_sword",
+      "minecraft:netherite_sword",
+      "minecraft:stone_sword",
+      "minecraft:wooden_sword",
+      "minecraft:copper_spear",
+			"minecraft:diamond_spear",
+			"minecraft:golden_spear",
+      "minecraft:iron_spear",
+      "minecraft:netherite_spear",
+      "minecraft:stone_spear",
+      "minecraft:wooden_spear"
+		],
+      "predicates": {
+        "minecraft:enchantments": [
+          {
+            "enchantments": [ "minecraft:fire_aspect" ]
+          }
+        ]
+      }
+    },
+    "luminance": 15,
+    "water_sensitive": false
+  }

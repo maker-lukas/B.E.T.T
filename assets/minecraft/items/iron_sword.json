@@ -1,0 +1,39 @@
+{
+    "model": {
+        "type": "minecraft:composite",
+        "models": [
+            {
+                "type": "minecraft:condition",
+                "property": "minecraft:component",
+                "predicate": "minecraft:enchantments",
+                "value": [
+                    {
+                        "enchantments": "minecraft:fire_aspect",
+                        "levels": {"min": 1}
+                    }
+                ],
+                "on_true": {"type": "minecraft:model", "model": "minecraft:item/sword/fire_aspect"},
+                "on_false": {"type": "minecraft:empty"}
+            },
+            
+            {
+                "type": "minecraft:model",
+                "model": "minecraft:item/iron_sword"
+            },
+
+            {
+                "type": "minecraft:condition",
+                "property": "minecraft:component",
+                "predicate": "minecraft:enchantments",
+                "value": [
+                    {
+                        "enchantments": "minecraft:sharpness",
+                        "levels": {"min": 1}
+                    }
+                ],
+                "on_true": {"type": "minecraft:model", "model": "minecraft:item/sword/sharpness"},
+                "on_false": {"type": "minecraft:empty"}
+            }
+        ]
+    }
+}

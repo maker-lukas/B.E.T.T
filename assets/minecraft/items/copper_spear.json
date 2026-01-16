@@ -1,0 +1,72 @@
+{
+    "model": {
+        "type": "minecraft:composite",
+        "models": [
+            {
+                "type": "minecraft:condition",
+                "property": "minecraft:component",
+                "predicate": "minecraft:enchantments",
+                "value": [
+                    {
+                        "enchantments": "minecraft:fire_aspect",
+                        "levels": {"min": 1}
+                    }
+                ],
+                "on_true": {
+                    "type": "minecraft:select",
+                    "property": "minecraft:display_context",
+                    "cases": [
+                        {
+                            "when": ["gui", "ground", "fixed", "on_shelf"],
+                            "model": {"type": "minecraft:model", "model": "minecraft:item/spear/fire_aspect_copper"}
+                        }
+                    ],
+                    "fallback": {
+                        "type": "minecraft:model", "model": "minecraft:item/spear/fire_aspect_in_hand_copper"
+                    }
+                },
+                "on_false": {"type": "minecraft:empty"}
+            },
+
+            {
+                "type": "minecraft:select",
+                "property": "minecraft:display_context",
+                "cases": [
+                    {
+                        "when": ["gui", "ground", "fixed", "on_shelf"],
+                        "model": {"type": "minecraft:model", "model": "minecraft:item/copper_spear"}
+                    }
+                ],
+                "fallback": {
+                    "type": "minecraft:model", "model": "minecraft:item/copper_spear_in_hand"
+                }
+            },
+
+            {
+                "type": "minecraft:condition",
+                "property": "minecraft:component",
+                "predicate": "minecraft:enchantments",
+                "value": [
+                    {
+                        "enchantments": "minecraft:sharpness",
+                        "levels": {"min": 1}
+                    }
+                ],
+                "on_true": {
+                    "type": "minecraft:select",
+                    "property": "minecraft:display_context",
+                    "cases": [
+                        {
+                            "when": ["gui", "ground", "fixed", "on_shelf"],
+                            "model": {"type": "minecraft:model", "model": "minecraft:item/spear/sharpness"}
+                        }
+                    ],
+                    "fallback": {
+                        "type": "minecraft:model", "model": "minecraft:item/spear/sharpness_in_hand"
+                    }
+                },
+                "on_false": {"type": "minecraft:empty"}
+            }
+        ]
+    }
+}

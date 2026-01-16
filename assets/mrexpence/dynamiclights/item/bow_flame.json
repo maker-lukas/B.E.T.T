@@ -1,0 +1,16 @@
+{
+    "match": {
+      "items": [
+			"minecraft:bow"
+		],
+      "predicates": {
+        "minecraft:enchantments": [
+          {
+            "enchantments": [ "minecraft:flame" ]
+          }
+        ]
+      }
+    },
+    "luminance": 12,
+    "water_sensitive": false
+  }

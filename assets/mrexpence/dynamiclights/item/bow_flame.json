@@ -1,8 +1,8 @@
 {
     "match": {
       "items": [
-			"minecraft:bow"
-		],
+        "minecraft:bow"
+      ],
       "predicates": {
         "minecraft:enchantments": [
           {

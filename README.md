@@ -1,5 +1,6 @@
 # **B.E.T.T** resource pack
 
+note: mending only starts to work when there is damage on the tool
 
 To select each texture individually you can use this website: [Pack Selector](https://maker-lukas.github.io/pack-selector/)
 

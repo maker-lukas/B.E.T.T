@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:item/crossbow_firework",
+  "textures": {
+    "layer0": "minecraft:item/crossbow_firework",
+    "layer1": "minecraft:item/crossbow/multishot_firework"
+  }
+}

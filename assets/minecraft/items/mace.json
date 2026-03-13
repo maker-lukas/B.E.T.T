@@ -1,0 +1,26 @@
+{
+    "model": {
+        "type": "minecraft:composite", 
+        "models": [
+            
+            {
+                "type": "minecraft:model",
+                "model": "minecraft:item/mace"
+            },
+
+            {
+                "type": "minecraft:condition",
+                "property": "minecraft:component",
+                "predicate": "minecraft:enchantments",
+                "value": [
+                    {
+                        "enchantments": "minecraft:wind_burst",
+                        "levels": {"min": 1}
+                    }
+                ],
+                "on_true": {"type": "minecraft:model", "model": "minecraft:item/mace/windburst"},
+                "on_false": {"type": "minecraft:empty"}
+            }
+        ]
+    }
+}
